@@ -1,0 +1,66 @@
+@import '../helper-css/reset.css';
+@import '../helper-css/normalize.css';
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+hr.vertical {
+  position: absolute;
+  height: 100%;
+  width: 50px;
+  background-color: #F4A460;
+  top: 0;
+  margin: 0;
+  left: 50px;
+  border: none;
+}
+
+hr.horizontal {
+  position: absolute;
+  height: 50px;
+  width: 50%;
+  bottom: 50%;
+  transform: translateY(50%);
+  background-color: #F4A460;
+  border: none;
+}
+
+.hero {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero .container .logo {
+  display: grid;
+  position: relative;
+  margin: 0;
+}
+.hero .container .logo hr {
+  overflow: hidden;
+}
+.hero .container .logo .logo-img-dark {
+  display: none;
+}
+.hero .container a {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 750px) {
+  .hero .logo img {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .hero .logo img {
+    width: 80%;
+  }
+  .hero .logo hr.horizontal {
+    height: 20px;
+  }
+  .hero .logo hr.vertical {
+    width: 20px;
+  }
+}/*# sourceMappingURL=dishcard.css.map */

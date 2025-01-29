@@ -1,0 +1,29 @@
+@import './variables.scss';
+
+.container {
+	max-width: 1440px;
+	margin: 0 40px;
+
+	* {
+		margin: 0 auto;
+	}
+}
+
+body {
+	background-color: #FFF8E1 ;
+	width: 100vw;
+}
+
+header, main, footer {
+	width: 100%;
+}
+
+img.dark {
+	display: none;
+}
+
+.button {
+	padding: 20px 40px;
+	color: $c-light-background;
+	background-color: $c-light-primary;
+}

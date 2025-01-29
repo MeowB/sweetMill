@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$c-light-background: #FFF8E1;
+$c-light-primary: #D2691E ;
+$c-light-accent: #F4A460 ;
+$c-light-text: #5C4033 ;
+
+$c-dark-background: #2B1B0F;
+$c-dark-primary: #A0522D;
+$c-dark-accent: #D2691E;
+$c-dark-text: #F5DEB3;
+
+
+// headings (h1, h2, h3, h4):
+@mixin heading1 {
+	font-family: 'poppins';
+	font-size: 56px;
+	line-height: 56px;
+	letter-spacing: -2.5px;
+	font-weight: 700;
+	color: $c-dark-navy;
+
+
+	@media screen and (max-width: 375px) {
+
+		font-size: 40px;
+		line-height: 40px;
+		letter-spacing: -1.79px;
+
+	}
+}
+
+@mixin heading2 {
+	font-family: 'poppins';
+	font-size: 48px;
+	line-height: 48px;
+	letter-spacing: -2.14px;
+	font-weight: 700;
+	color: $c-dark-navy;
+
+	@media screen and (max-width: 375px) {
+
+		font-size: 32px;
+		line-height: 32px;
+		letter-spacing: -1.43px;
+
+	}
+}
+
+
+@mixin heading3 {
+	font-family: 'poppins';
+	font-size: 48px;
+	line-height: 48px;
+	letter-spacing: -1.79px;
+	font-weight: 700;
+	color: $c-dark-navy;
+
+	@media screen and (max-width: 375px) {
+
+		font-size: 32px;
+		line-height: 32px;
+		letter-spacing: -1.43px;
+
+	}
+}
+
+@mixin heading4 {
+	font-family: 'poppins';
+	font-size: 28px;
+	line-height: 28px;
+	letter-spacing: -1.07px;
+	font-weight: 700;
+	color: $c-dark-navy;
+
+	@media screen and (max-width: 375px) {
+
+		font-size: 24px;
+		line-height: 24px;
+		letter-spacing: -1.07px;
+
+	}
+}
+
+// default text:
+
+@mixin text {
+	font-family: 'montserrat';
+	font-size: 15px;
+	line-height: 25px;
+	color: $c-light-text;
+}
